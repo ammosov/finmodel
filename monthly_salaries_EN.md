@@ -66,4 +66,4 @@ This is where things get tricky! We begin with creating an invisible boolean 0-1
     
     --(DATE($B$1,SEQUENCE(1,$B$3,$B$2),1)<Employees[end_date])`
 
-- `--()` is a "double unary" operator that force converts `TRUE` and `FALSE` bools to `1` and `0` values (TRUE > -1 > 1 and FALSE > 0 > 0). In Excel, this type conversion needs to be done explicitly. Another way to do it is to use N() formula.   
+- `--()` is a "double unary" operator that force converts `TRUE` and `FALSE` bools to `1` and `0` values (TRUE > -1 > 1 and FALSE > 0 > 0). In Excel, this type conversion needs to be done explicitly. Another way to do it is to use `N()` formula.   
