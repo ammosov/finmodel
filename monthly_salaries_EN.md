@@ -2,6 +2,8 @@
 
 _Compatible with: Excel 365_
 
+_Applies to file: https://github.com/ammosov/finmodel/blob/main/monthly_salaries.xlsx_
+
 Let us begin with some of the simplest tasks, like making a monthly salary payment schedule.  
 
 ## Input
