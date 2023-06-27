@@ -25,6 +25,8 @@ The spreadsheet will auto generate a schedule of salary payments for each employ
 
 ![image](https://github.com/ammosov/finmodel/assets/4894284/3b6e3cfd-1b22-49e8-8998-952393e024f7)
 
+## Under the hood
+
 For those of you who care what happens under the hood:
 
 ### Create a flexible date sequence in a row
