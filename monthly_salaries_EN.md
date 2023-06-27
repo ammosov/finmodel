@@ -31,10 +31,10 @@ For those of you who care what happens under the hood:
 
 `=DATE(year_start,SEQUENCE(1,month_start,how_many_months),1)`
 
-First we take a DATE() formula and feed to it an array of month numbers to force it to convert it to an array of dates
+First we take a DATE() function and feed to it an array of month numbers to force it to convert it to an array of dates
 - `DATE(year,month,day)` creates a date value for a given year, day and month
 - `year`=year_start is the year when the sequence starts, e.g. 2023;
-- `month`=SEQUENCE() is an Excel formula that generates a single row of month numbers to be converted into dates;
+- `month`=SEQUENCE() is an Excel function that generates a single row of month numbers to be converted into dates;
 - `day`=1 tells DATE() that each date will be the 1st day of the month.
 
 `SEQUENCE(rows,columns,start,step)` returns an array of x `rows` by y `columns`, beginning from `start` value and incrementing it by `step` value; if `step` is omitted, it defaults to 1, as in our case. 
@@ -44,9 +44,9 @@ Example used here at C5: `=DATE($B$1,SEQUENCE(1,$B$3,$B$2),1)`
 ### Return a 1-dimension array of sums of columns of another array
 
 `=BYCOL(start_address#,LAMBDA(arg*,FUNCTION(arg*)))`
-- `BYCOL (array, function)` is a formula that tells Excel to take an array and apply the function to it column by column;
+- `BYCOL (array, function)` is a function that tells Excel to take an array and apply the function to it column by column;
 - `array`=start_address# is the `address of start (upper left) cell` of the array to be summed and followed by `#`.
-- `#` (hash) is a "spill operator" that tells the formula: "this `array` is "dynamic" and has a variable length";
+- `#` (hash) is a "spill operator" that tells the function: "this `array` is "dynamic" and has a variable length";
 - `LAMBDA()` is a wrapper that passes `arg*` (i.e. one of more arguments) to the `FUNCTION` and returns result; arguments always come first, function last.
 
 Example used here at C6: `=BYCOL(C8#,LAMBDA(a,SUM(a)))`  
