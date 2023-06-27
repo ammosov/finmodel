@@ -45,7 +45,8 @@ Example used here at C5: `=DATE($B$1,SEQUENCE(1,$B$3,$B$2),1)`
 
 `=BYCOL(start_address#,LAMBDA(arg*,FUNCTION(arg*)))`
 - `BYCOL (array, function)` is a formula that tells Excel to take an array and apply the function to it column by column;
-- `array`=start_address# is the `address of start (upper left) cell` of the array to be summed and followed by `#`(sharp) which means the `array` has a dynamic end ("get as much as you can find and stop");
+- `array`=start_address# is the `address of start (upper left) cell` of the array to be summed and followed by `#`.
+- `#` (hash) is a "spill operator" that tells the formula: "this `array` is "dynamic" and has a variable length";
 - `LAMBDA()` is a wrapper that passes `arg*` (i.e. one of more arguments) to the `FUNCTION` and returns result; arguments always come first, function last.
 
 Example used here at C6: `=BYCOL(C8#,LAMBDA(a,SUM(a)))`  
