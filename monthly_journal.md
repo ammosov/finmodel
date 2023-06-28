@@ -125,7 +125,7 @@ The summary table expression here has one advantage: it can take any number of p
 - `COUNTA()` counts the number of nonblank cells in a range - which is, in our case, the same as length of `categories` and the number of rows in our summary matrix; we use this function because text strings cannot be counted directly
 - `COUNT()` counts the number of values in a range - which is, in our case, the same as length of `date_sequence` and the number of columns in our summary matrix
 - `LAMBDA(a,b,expression(a,b))` inside MAKEARRAY() takes the matrix height `a` and width `b` we just calculated, iterates over them and sends the value pairs to the `expression(a,b)`
-- `FILTER(range,criteria)` returns a subrange of `range` that meets `criteria`; SUM(FILTER()) sums this subrange and returns a single summary value
+- `FILTER(range,criteria)` returns a subrange of `range` that meets `criteria`; `SUM(FILTER())` sums this subrange and returns a single summary value
 - Criteria inside `FILTER()` are 0-1 boolean ranges of the same length; multiplication serves as `AND()` operator
 - `INDEX(range,x)` is a function that returns `xth` element from `range`
 - `0` in the last position of `FILTER()` is a substitute for "no journal record is found for this period or category" 
