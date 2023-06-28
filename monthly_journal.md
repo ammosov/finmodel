@@ -86,7 +86,7 @@ Result is a dynamic list of categories that can be called as `=categories` or us
 
 ### Dynamic summary table
 
-This expression is quite complicated and is essentially similar to list comprehesion and for loops in Python. It is used only to create a matrix that is flexible in two dimensions and is fully automatic. If such a matrix is to be created manually, a number of much simpler methods are available. In particular, `SUMPRODUCT()` can be easily used for matrix manipulations. 
+This expression is quite complicated and is essentially similar to list comprehension and for loops in Python. It is used only to create a matrix that is flexible in two dimensions and is fully automatic. If such a matrix is to be created manually, a number of much simpler methods are available. In particular, `SUMPRODUCT()` can be easily used for matrix manipulations. 
 
 The summary table expression here has one advantage: it can take any number of periods and categories and return a correct range of sums. 
 
