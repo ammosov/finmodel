@@ -3,7 +3,7 @@
 
 _Compatible with: Excel 365_
 
-_Applies to file: https://github.com/ammosov/finmodel/blob/main/monthly_journal.xlsx_
+_Applies to file: [https://github.com/ammosov/finmodel/blob/main/monthly_journal.xlsx](https://github.com/ammosov/finmodel/blob/main/monthly_journal.xlsx)_
 
 An important part of financial modeling is mapping sums of money to periods and categories. The salary forecast exercise did it in a most simple form, because salary payments are the same every time and happen once every period. Let us deal with more complicated data that consists of individual payments on separate dates. Payment can be incoming, such as invoices paid by startup customers, and outgoing, such as cloud service bills, conference fees, legal expenses, and nearly everything else.  
 
