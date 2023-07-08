@@ -114,7 +114,7 @@ Example: `{1,2;10,20}` <=> 2x2 matrix; row 1: `| 1 | 2 |` ; row 2: `| 10 | 20 |`
 
 # Data Validation Dynamic List 
 
-Data Validation is an Excel feature that allows to create a drop down list in cell. As of 2024, Excel 365 can use only ranges in DataValidation, not formulas or names that return an array. Until a new version makes it possible, we need to use a workaround for this. One way is to use INDIRECT() to convert a dynamic reference to a finite range that data validation can use. 
+Data Validation is an Excel feature that allows to create a drop down list in cell. As of 2024, Excel 365 can use only ranges in DataValidation, not formulas or names that return an array. Until a new version makes it possible, we need to use a workaround for this. One way is to use `INDIRECT()` to convert a dynamic reference to a finite range that data validation can use. 
 
 `=INDIRECT("Table[#Headers]")` will create a dropdown list of "column" labels. 
 
@@ -143,6 +143,6 @@ Note: array for getTableCell() in `I16#` is a different rule that checks value o
 # Excel legacy bugs and errors
 
 For a very detailed discussion of how and why Excel for many years used two different methods (with different results) 
-for calculating linear regreression for its own LINEST() function and for making trendlines in charts, see: 
+for calculating linear regreression for its own `LINEST()` function and for making trendlines in charts, see: 
 
 https://www.informit.com/articles/article.aspx?p=2019170
