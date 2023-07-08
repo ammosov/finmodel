@@ -48,7 +48,7 @@ All these techniques may be useful for creating Excel dashboards, both financial
 
 ## Under the hood
 
-# Excel notation for "range" and "array"
+### Excel notation for "range" and "array"
 Range: a rectangular block of cells. 
 
 Example: `A1:B2` <=> 2x2 block; row 1: ` | A1 | B1 |`, row 2: `| A2 | B2 |`
@@ -65,7 +65,7 @@ Example: `{1,2;10,20}` <=> 2x2 matrix; row 1: `| 1 | 2 |` ; row 2: `| 10 | 20 |`
 	10 | 20 
 
 
-# Table manipulation functions
+### Table manipulation functions
 
 	getTableCol = LAMBDA(
 	    table,
@@ -112,7 +112,7 @@ Example: `{1,2;10,20}` <=> 2x2 matrix; row 1: `| 1 | 2 |` ; row 2: `| 10 | 20 |`
 - `INDIRECT()` takes a text string that is identical to a valid Excel range address and converts it to a valid Excel address. I am not sure why Excel developers did it this way (and suspect some need for compatibility with some obscure elements of Excel core as written in late 1980s).  
 - `TEXT()` is a function intended specifically for converting its argument from number to text; here it provides an extra control for cases when the referring cell contains a number instead of a text string. Named structured references to tables are not converted by `TEXT()`.
 
-# Data Validation Dynamic List 
+### Data Validation Dynamic List 
 
 Data Validation is an Excel feature that allows to create a drop down list in cell. As of 2024, Excel 365 can use only ranges in DataValidation, not formulas or names that return an array. Until a new version makes it possible, we need to use a workaround for this. One way is to use `INDIRECT()` to convert a dynamic reference to a finite range that data validation can use. 
 
@@ -126,7 +126,7 @@ Data Validation is an Excel feature that allows to create a drop down list in ce
 
 Note that the lists generated this way will contain unique values (as if `UNIQUE()` function was used on them) but cannot be sorted yet, they follow the sort order of the source. 
 
-# Conditional Format for different data types
+### Conditional Format for different data types
 
 Excel stores dates as numbers, and it is not possible to carry the specific date format along with this number across calculation. Date as number, while perfectly correct, is hard to read and interpret. A crude but working workaround used here is conditional format that checks the range of dates acrually used in table, and then, if the number falls within this range, formats it as date. Of course, a potential problem is a different data type number that will be also within this range. However, as long as date as numbers are over 40 000 and ids and days are double digits at best, no conflict of data types is expected. 
 
@@ -140,7 +140,7 @@ Note: array for getTableCell() in `I16#` is a different rule that checks value o
 
 ![image](https://github.com/ammosov/finmodel/assets/4894284/42f5f52c-067e-4c8a-8e66-2a20f03e58a9)
 
-# Excel legacy bugs and errors
+### Excel legacy bugs and errors
 
 For a very detailed discussion of how and why Excel for many years used two different methods (with different results) 
 for calculating linear regreression for its own `LINEST()` function and for making trendlines in charts, see: 
