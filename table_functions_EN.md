@@ -43,7 +43,7 @@ Use parameters in cells G14, G15 and G16 to retrieve individual cells and blocks
 
 ![image](https://github.com/ammosov/finmodel/assets/4894284/9dcb7164-dd5c-4b32-b2fd-8d5152b136f7)
 
-All these techniques may be useful for creating Excel dashboard, both financial and now. What is more important, though, is that these functions return arrays that can be used inside calculations, and this is how we will reuse them further on. 
+All these techniques may be useful for creating Excel dashboards, both financial and not. What is more important, though, is that these functions return arrays that can be used inside calculations, and this is how we will reuse them further on. 
 
 
 ## Under the hood
