@@ -136,7 +136,7 @@ Keep in mind: this format must by applied to all cells where the array can "spil
 
 ![image](https://github.com/ammosov/finmodel/assets/4894284/4934e6e8-ca0b-40c1-9dde-e463d8997d1c)
 
-Note: array for getTableCell() in `I16#` is a different rule that checks value of `I14`, and uses a different date format (verbose month names). 
+Note: array for `getTableCell()` in `I16#` is a different rule that checks value of `I14`, and uses a different date format (verbose month names). 
 
 ![image](https://github.com/ammosov/finmodel/assets/4894284/42f5f52c-067e-4c8a-8e66-2a20f03e58a9)
 
