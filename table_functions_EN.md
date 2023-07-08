@@ -6,12 +6,12 @@ _Compatible with: Excel 365_
 _Applies to file: https://github.com/ammosov/finmodel/blob/main/table_functions.xlsx_
 
 If we store information in Excel tables, we need a method to get information out of tables and use it elsewhere. Excel has a built in structured reference language that can do a few things - 
-for example, reference a table column as an array. Structured references have some limitations - for example, they behave like relative references when copied and cannot directly convert a text string from cell into a table or column label.  
+for example, reference a table column as an array. Structured references have some limitations - for example, they behave like relative references when copied and cannot directly convert a text string from cell into a table or a column label.  
 
 Before you begin, install add-on "Excel Labs" from Microsoft Store (former Advanced Formula Environment, see https://github.com/microsoft/advanced-formula-environment ). 
 This feature was first published in 2023, and is a mini-IDE within Excel. Must have. We will use it to create and edit named functions. 
 
-Named function encapsulate logic (i.e. operatons and calculations) that are repeated many times, have a lot of steps and (most important!) easy to break by a random typo. We will hide this complex logic in a container that will require from user only to give it a few input cells. 
+Named function encapsulate logic (i.e. operatons and calculations) that are repeated many times, have a lot of steps and (most important!) easy to break by a random typo. We will hide this complex logic in a container that will require only references to a few cells as user input. 
 
 ## Input
 
